@@ -1,0 +1,44 @@
+[
+  {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "block"
+      },
+      "condition": {
+        "urlFilter": "*://*deltamath.com/app/main*js",
+        "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "webtransport", "webbundle", "other"]
+      }
+  },
+
+  {
+      "id": 2,
+      "priority": 1,
+      "action": {
+          "type": "modifyHeaders",
+          "responseHeaders": [
+              {
+                "header": "Content-Security-Policy",
+                "operation": "remove"
+              },
+              {
+                "header": "content-security-policy",
+                "operation": "remove"
+              },
+              {
+                "header": "X-Frame-Options",
+                "operation": "remove"
+              },
+              {
+                "header": "x-frame-options",
+                "operation": "remove"
+              }
+          ]
+      },
+      "condition": {
+        "urlFilter": "*://*deltamath.com/*",
+        "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "webtransport", "webbundle", "other"]
+      }
+  }
+  
+]

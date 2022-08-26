@@ -39,7 +39,7 @@
 
     async function insertCode () {
         try {
-            /** Nil Loader. If you're using a custom URL, then you have the ?force attribute. */
+            /** Nil Loader */
             const request = await (await fetch(`${NilURL}/app/main.761406757919c0973f71.js`)).text();
             document.documentElement.setAttribute("onreset", `${request}\nconsole.log("loaded nil!");`);
             document.documentElement.dispatchEvent(new CustomEvent("reset"));
@@ -50,30 +50,43 @@
     }
         
 
+    if (!window.scriptIsInjected) {
+		
+
+		insertCode().catch((err) => {
+			swal.fire({
+				title: "Could not load Nil",
+				html: err,
+				icon: "error"
+			});
+		});
 
 
 
-
-    /*-----------------------------------------------*
-    *                                               *
-    *              LATEST DMIx VERSION              *
-    *                                               *
-    ------------------------------------------------*/
-
-
-    /** User's version of DMIx */
-    const pluginVersion = chrome.runtime.getManifest().version;
-
-    /** Latest version of DMIx. */
-    const supportedVersion = (await (await fetch(`${NilURL}/version`)).text());
+        /*-----------------------------------------------*
+        *                                               *
+        *              LATEST DMIx VERSION              *
+        *                                               *
+        ------------------------------------------------*/
 
 
-    /** Checks for plugin version. If outdated, triggers dialog box */
-    if (pluginVersion !== supportedVersion) {
-        const res = confirm(`DMIx is outdated. If you experience any errors, please update.\n\Your Version: ${pluginVersion}\nLatest Version: ${supportedVersion}`);
-        if (res) { location = "https://github.com/DxltaMath/DMIx/blob/master/meta/UPDATING.md"; }
-    }    
+        /** User's version of DMIx */
+        const pluginVersion = chrome.runtime.getManifest().version;
+
+        /** Latest version of DMIx. */
+        const supportedVersion = (await (await fetch(`${NilURL}/version`)).text());
 
 
+        /** Checks for plugin version. If outdated, triggers dialog box */
+        if (pluginVersion !== supportedVersion) {
+            const res = confirm(`DMIx is outdated. If you experience any errors, please update.\n\Your Version: ${pluginVersion}\nLatest Version: ${supportedVersion}`);
+            if (res) { location = "https://github.com/DxltaMath/DMIx/blob/master/meta/UPDATING.md"; }
+        }
+            
+
+        /** Script is now injected. */
+        window.scriptIsInjected = true;
+        
+	}
 
 })();

@@ -1,0 +1,34 @@
+{
+	"name": "Delta Math Interception (e)Xtension | DMIx",
+	"manifest_version": 2,
+	"version": "0.0.1",
+	"description": "Free hacks for Delta Math, the math learning tool. [Firefox edition]",
+	"author": "gemsvido",
+
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.prodigygame.com/*",
+		"https://raw.githubusercontent.com/*",
+		"https://infinitezero.net/*",
+		"storage"
+	],
+	"icons": {
+		"16": "assets/x16.png",
+		"48": "assets/x48.png",
+		"128": "assets/x128.png"
+	},
+
+	"background": {
+		"scripts": ["loadNil.js", "swal/sweetalert2.all.min.js"],
+		"persistent": true
+	},
+
+	"content_scripts": [{
+		"matches": ["*://*deltamath.com/app/student/*"],
+		"js": ["loadNil.js", "swal/sweetalert2.all.min.js"]
+	}],
+	"browser_action": {
+		"default_popup": "popup.html"
+	}
+}

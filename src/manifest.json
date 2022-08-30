@@ -10,9 +10,8 @@
 		"storage"
 	],
 	"host_permissions": [
-		"*://*.prodigygame.com/*",
-		"https://raw.githubusercontent.com/*",
-		"https://infinitezero.net/*"
+		"*://*.deltamath.com/*",
+		"https://raw.githubusercontent.com/*"
 	],
 	"icons": {
 		"128": "assets/x128.png"

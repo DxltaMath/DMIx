@@ -1,6 +1,6 @@
 {
   "name": "@deltamath/dmix",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Delta Math Interception (e)Xtension",
   "main": "build.sh",
   "scripts": {

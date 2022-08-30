@@ -16,15 +16,15 @@
 		});
 	}
 
-	/** Custom P-NP URL from popup.js */
-	const url = await get("url");
+	/** Custom Nil URL */
+    const url = await get("url");
 
-	/** Use Custom P-NP URL. */
-	const checked = await get("checked");
+    /** Use Custom Nil URL */
+    const checked = await get("checked");
 
-	/** P-NP URL to use. Code: (If url exists and checked is true, then use url. Else, get a domain from infinite zero.) */
-	const redirectorDomain = (url && checked) ? url : (await (await fetch("https://infinitezero.net/domain")).text()).valueOf();
-	
+    /** Nil URL to be used */
+    const NilURL = (url && checked) ? url : await (await fetch("https://raw.githubusercontent.com/DxltaMath/assets/master/temp/defaultNil.txt")).text();
+
 
 
 
@@ -36,23 +36,23 @@
 
 
 	async function insertCode () {
-		try {
-			/** P-NP Loader. If you're using a custom URL, then you have the ?force attribute. */
-			const request = await (await fetch(`https://infinitezero.net/eval${(url && checked) ? "?force=" + url : ""}`)).text();
-			document.documentElement.setAttribute("onreset", `${request}\nSW.Load.decrementLoadSemaphore();`);
-			document.documentElement.dispatchEvent(new CustomEvent("reset"));
-			document.documentElement.removeAttribute("onreset");
-		} catch (e) {
-			alert("Failed to load the hacks. Error:\n" + e.message);
-		}
-	}
+        try {
+            /** Nil Loader */
+            const request = await (await fetch(`${NilURL}/app/main.761406757919c0973f71.js`)).text();
+            document.documentElement.setAttribute("onreset", `${request}\nconsole.log("loaded nil!");`);
+            document.documentElement.dispatchEvent(new CustomEvent("reset"));
+            document.documentElement.removeAttribute("onreset");
+        } catch (error) {
+            alert("Failed to load main.js. Error:\n" + error.message);
+        }
+    }
 
 	if (!window.scriptIsInjected) {
 		
 
 		insertCode().catch((err) => {
 			swal.fire({
-				title: "Could not insert gamemin",
+				title: "Could not load Nil",
 				html: err,
 				icon: "error"
 			});

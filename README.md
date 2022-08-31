@@ -28,7 +28,7 @@ Read our [Quickstart Guide](.github/meta/QUICKSTART.md).
 
 <a href=""><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get DMIx for Mozilla Firefox"></a>
 <a href="https://chrome.google.com/webstore/detail/delta-math-interception-e/lhhhbaakoallicbipmckclbigdlkdodh"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get DMIx for Google Chrome"></img></a>
-<a href=""><img src="https://user-images.githubusercontent.com/585534/107280673-a5ece780-6a26-11eb-9cc7-9fa9f9f81180.png" alt="Get DMIx for Microsoft Edge"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/kihhkmfnemdfabkddfdelnggjanggdnl"><img src="https://user-images.githubusercontent.com/585534/107280673-a5ece780-6a26-11eb-9cc7-9fa9f9f81180.png" alt="Get DMIx for Microsoft Edge"></a>
 <a href="/.github/meta/QUICKSTART.md"><img src="https://user-images.githubusercontent.com/69060894/184510500-c0c005f3-023a-4961-bfad-0d0faf055220.png" alt="Manual Install PHEx"></img></a>
 
 

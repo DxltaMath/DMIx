@@ -30,7 +30,7 @@ console.log("Zipping chromium extension...");
 
 
 // Zip ./src to ./build.extension.zip
-zipdir("./src/", { saveTo: "./build/extension.zip" }, function (err, buffer) {
+zipdir("./src/", { saveTo: "./build/extension.zip" }, function (err, _buffer) {
 
     // If this encounters an error, print the error and return.
 	if (err) return console.error(err);

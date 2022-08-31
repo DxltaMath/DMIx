@@ -8,9 +8,8 @@
 	"permissions": [
 		"webRequest",
 		"webRequestBlocking",
-		"*://*.prodigygame.com/*",
+		"*://*deltamath.com/*",
 		"https://raw.githubusercontent.com/*",
-		"https://infinitezero.net/*",
 		"storage"
 	],
 	"icons": {

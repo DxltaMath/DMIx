@@ -35,41 +35,52 @@ Read our [Quickstart Guide](.github/meta/QUICKSTART.md).
 </h4>
 <br><br>
 
-# Delta Math Interception (e)Xtension | DMIx
 
 
-
-<br>
-
-
-## How does it work?
-1. Always blocking the original DeltaMath main.js, (block `*://*deltamath.com/app/main*js`)
-2. Whenever connecting to any DeltaMath URL, removes `Content-Security-Policy` headers to allow us to connect to our servers, even from DeltaMath itself.
-3. If you're going to DeltaMath, loads our script from [Nil](https://github.com/DxltaMath/public-Nil), and injects our modified `main.js` into DeltaMath.
-4. [dGUI](https://github.com/DxltaMath/dGUI) is loaded (this is included in the functionality of [Nil](https://github.com/DxltaMath/public-Nil)).
+## Delta Math Interception (e)Xtension | DMIx
 
 
 <br>
 
-## Building using Shell
-```shell
-sh ./build.sh
-```
-
-## Building using Node.js
-```
-npm install
-npm run build
-```
-
-## Build output
-The output will be in `/build/`. The generated files are `extension.zip` (for chromium), `extension.xpi` (for firefox), and `extension.crx` (which actually isn't generated- it's downloaded from the chrome web store).
-
-<br><br>
+<details>
+	<summary><strong>How does it work?</strong></summary>
+	<li>Always blocking the original DeltaMath main.js, (block <code>*://*deltamath.com/app/main*js</code>)</li>
+	<li>Whenever connecting to any DeltaMath URL, removes <code>Content-Security-Policy</code> headers to allow us to connect to our servers, even from DeltaMath itself.</li>
+	<li>If you're going to DeltaMath, loads our script from <a href="https://github.com/DxltaMath/public-Nil">Nil</a>, and injects our modified <code>main.js</code> into DeltaMath.</li>
+	<li><a href="https://github.com/DxltaMath/dGUI">dGUI</a> is loaded (this is included in the functionality of <a href="https://github.com/DxltaMath/public-Nil">Nil</a>).</li>
+</details>
 
 
+<br>
 
+<details>
+	<summary><strong>Building using Shell</strong></summary>
+	<p>Works on Unix systems only. Sorry, windows developers.</p>
+	<code>sh ./build.sh</code>
+</details>
 
-## Credit
-Code was based on [PHEx](https://github.com/ProdigyPNP/ProdigyMathGameHacking/tree/master/PHEx), but is changed to hack DeltaMath.
-- This extension is currently maintained by [gemsvidø](https://github.com/afkvido).
+<br>
+
+<details>
+	<summary><strong>Building using Node.js</strong></summary>
+	<code>npm install && npm run build</code>
+</details>
+
+<br>
+
+<details>
+	<summary><strong>Build output</strong></summary>
+	<p>
+		The output will be in <code>/build/</code>. The generated files are <code>extension.zip</code> (for chromium), <code>extension.xpi</code> (for firefox), and <code>extension.crx</code> (which actually isn't generated- it's downloaded from the chrome web store).
+	</p>
+</details>
+
+<br>
+
+<details>
+	<summary><strong>Credit</strong></summary>
+	<p>
+		Code was based on <a href="https://github.com/ProdigyPNP/ProdigyMathGameHacking/tree/master/PHEx">PHEx</a>, but is changed to hack DeltaMath.
+		<li>This extension is currently maintained by <a href="https://github.com/afkvido">gemsvidø</a>.</li>
+	</p>
+</details>

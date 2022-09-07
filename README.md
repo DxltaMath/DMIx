@@ -46,8 +46,8 @@ Read our [Quickstart Guide](.github/meta/QUICKSTART.md).
 	<summary><strong>How does it work?</strong></summary>
 	<li>Always blocking the original DeltaMath main.js, (block <code>*://*deltamath.com/app/main*js</code>)</li>
 	<li>Whenever connecting to any DeltaMath URL, removes <code>Content-Security-Policy</code> headers to allow us to connect to our servers, even from DeltaMath itself.</li>
-	<li>If you're going to DeltaMath, loads our script from <a href="https://github.com/DxltaMath/public-Nil">Nil</a>, and injects our modified <code>main.js</code> into DeltaMath.</li>
-	<li><a href="https://github.com/DxltaMath/dGUI">dGUI</a> is loaded (this is included in the functionality of <a href="https://github.com/DxltaMath/public-Nil">Nil</a>).</li>
+	<li>If you're going to DeltaMath, loads our script from <a href="https://github.com/DxltaMath/Nil">Nil</a>, and injects our modified <code>main.js</code> into DeltaMath.</li>
+	<li><a href="https://github.com/DxltaMath/dGUI">dGUI</a> is loaded (this is included in the functionality of <a href="https://github.com/DxltaMath/Nil">Nil</a>).</li>
 </details>
 
 

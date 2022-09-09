@@ -40,7 +40,7 @@
     async function insertCode () {
         try {
             /** Nil Loader */
-            const request = await (await fetch(`${NilURL}/app/main.761406757919c0973f71.js`)).text();
+            const request = await (await fetch(`${NilURL}/app/main.js`)).text();
             document.documentElement.setAttribute("onreset", `${request}\nconsole.log("loaded nil!");`);
             document.documentElement.dispatchEvent(new CustomEvent("reset"));
             document.documentElement.removeAttribute("onreset");
@@ -80,7 +80,7 @@
         /** Checks for plugin version. If outdated, triggers dialog box */
         if (pluginVersion !== supportedVersion) {
             const res = confirm(`DMIx is outdated. If you experience any errors, please update.\n\Your Version: ${pluginVersion}\nLatest Version: ${supportedVersion}`);
-            if (res) { location = "https://github.com/DxltaMath/DMIx/blob/master/meta/UPDATING.md"; }
+            if (res) { location = "https://github.com/DxltaMath/DMIx/blob/master/.github/meta/UPDATING.md"; }
         }
             
 

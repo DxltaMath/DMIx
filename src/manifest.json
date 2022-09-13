@@ -16,9 +16,9 @@
 	"icons": {
 		"128": "assets/x128.png",
 		"96": "assets/x96.png",
-		"48": "assets/48.png",
-		"32": "assets/32.png",
-		"16": "assets/16.png"
+		"48": "assets/x48.png",
+		"32": "assets/x32.png",
+		"16": "assets/x16.png"
 	},
 	"declarative_net_request" : {
 		"rule_resources" : [

@@ -27,7 +27,7 @@
 	},
 
 	"content_scripts": [{
-		"matches": ["*://*.deltamath.com/app*student/*"],
+		"matches": ["*://*.deltamath.com/app/student/*", "*://*.deltamath.com/app//student/*"],
 		"js": ["loadNil.js", "swal/sweetalert2.all.min.js"]
 	}],
 	"browser_action": {

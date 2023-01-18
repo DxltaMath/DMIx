@@ -6,6 +6,7 @@ specifiers:
   '@types/node': 18.11.18
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.10
+  chrome-types: ^0.1.163
   plasmo: 0.62.0
   prettier: 2.8.2
   react: 18.2.0
@@ -13,6 +14,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
+  chrome-types: 0.1.163
   plasmo: 0.62.0_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2488,6 +2490,10 @@ packages:
   /chrome-trace-event/1.0.3:
     resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}
     engines: {node: '>=6.0'}
+    dev: false
+
+  /chrome-types/0.1.163:
+    resolution: {integrity: sha512-GSy1Nx2Q0laTJq84sfEaeUpJPVEz5hJveRsYQ7E1R/0eXmZgIGO+KxPg7CYzMB6zwwaXMoW9E+BO3slBfchHwg==}
     dev: false
 
   /cli-cursor/4.0.0:

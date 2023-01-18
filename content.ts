@@ -1,7 +1,8 @@
 import type { PlasmoContentScript } from "plasmo"
 
+
 export const config: PlasmoContentScript = {
-  matches: ["https://deltamath.com/*", "*://*/*"],
+  matches: ["https://*.deltamath.com/*"],
   run_at: "document_start"
 }
 
@@ -77,11 +78,9 @@ async function injectCode () {
 
 }
 
-window.addEventListener("error", ev => alert("E"));
-
 
 injectCode().then(() => {
   console.log("%cDMIx", "font-size:69px;color:#540052;font-weight:900;font-family:sans-serif;");
-  console.log(`%cVersion 0.2.0`, "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");  
+  console.log(`%cVersion ${chrome.runtime.getManifest().version}`, "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");  
 });
 

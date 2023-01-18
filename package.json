@@ -28,8 +28,21 @@
     "@plasmohq/prettier-plugin-sort-imports": "3.6.1"
   },
   "manifest": {
+    "permissions": [
+      "declarativeNetRequest"
+    ],
     "host_permissions": [
-      "https://*/*"
-    ]
+      "*://*/*",
+      "https://deltamath.com/*"
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "~rulesets/rules.json"
+        }
+      ]
+    }
   }
 }

@@ -1,7 +1,8 @@
 import type { PlasmoContentScript } from "plasmo"
 
 export const config: PlasmoContentScript = {
-  matches: ["https://deltamath.com/*"]
+  matches: ["https://deltamath.com/*", "*://*/*"],
+  run_at: "document_start"
 }
 
 
@@ -52,6 +53,7 @@ function applyPatches (code : string) {
 }
 
 async function fetchGui (url : string = "https://raw.githubusercontent.com/DxltaMath/dGUI/master/dist/bundle.js") {
+  // https://cdn.statically.io/gh/DxltaMath/dGUI/master/dist/bundle.min.js
   console.log(`dGUI.js URL: ${url}`);
   const dGUI = await (await fetch(url)).text();
   return dGUI;
@@ -75,13 +77,11 @@ async function injectCode () {
 
 }
 
-window.addEventListener("load", () => {
-  
+window.addEventListener("error", ev => alert("E"));
 
 
-
-
+injectCode().then(() => {
   console.log("%cDMIx", "font-size:69px;color:#540052;font-weight:900;font-family:sans-serif;");
-	console.log(`%cVersion 0.2.0`, "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");
-
+  console.log(`%cVersion 0.2.0`, "font-size:20px;color:#000025;font-weight:700;font-family:sans-serif;");  
 });
+

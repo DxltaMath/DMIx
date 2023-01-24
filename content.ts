@@ -2,8 +2,9 @@ import type { PlasmoContentScript } from "plasmo"
 
 
 export const config: PlasmoContentScript = {
-  matches: ["https://*.deltamath.com/*"],
-  run_at: "document_start"
+  matches: ["*://*.deltamath.com/*"],
+  run_at: "document_start",
+  exclude_matches: ["*://*.deltamath.com/", "*://*.deltamath.com/app/images/*", "*://*.deltamath.com/app/assets/*", "*://*.deltamath.com/app/*.js", "*://*.deltamath.com/app/*.css"],
 }
 
 

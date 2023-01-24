@@ -2,7 +2,7 @@
   "name": "@deltamath/dmix",
   "displayName": "Delta Math Interception (e)Xtension",
   "version": "0.2.0",
-  "description": "Free hacks for Delta Math, the math learning tool.",
+  "description": "Mod and plugin loader for DeltaMath.",
   "author": "gemsvido",
   "engines": {
     "npm": ">=7.0.0",

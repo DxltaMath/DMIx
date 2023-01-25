@@ -10,6 +10,6 @@
  * let q : patch = ['o', 'i']
  * ```
  */
-type patch = [string | RegExp, string];
+type patch = [string | RegExp | "prepend" | "append", string];
 
 export default patch;

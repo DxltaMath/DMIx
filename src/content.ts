@@ -1,7 +1,9 @@
 import type { PlasmoContentScript } from "plasmo"
 import applyPatches from "~applyPatches";
-import fetchDeltaCode from "~fetch/fetchDeltaCode";
-import fetchGui from "~fetch/fetchGui";
+import fetchDeltaCode from "~util/fetchDeltaCode";
+import fetchGui from "~util/fetchGui";
+import getPlugins from "~getPlugins";
+import loadJS from "~util/loadJS";
 
 
 export const config : PlasmoContentScript = {
@@ -11,22 +13,18 @@ export const config : PlasmoContentScript = {
 }
 
 
-function loadJS (js : string) : void {
-  document.documentElement.setAttribute("onreset", js);
-  document.documentElement.dispatchEvent(new CustomEvent("reset"));
-  document.documentElement.removeAttribute("onreset");
-}
-
 async function injectCode () {
 
+  const original = await fetchDeltaCode();
+  const plugins = getPlugins();
+  const patchedFile = applyPatches(original, plugins);
+
   // load DeltaMath file
-  await loadJS(applyPatches(await fetchDeltaCode()));
-    
-  
+  await loadJS(patchedFile);
 
-  // load DeltaMath GUI
-  await loadJS(await fetchGui());
 
+  // Asynchronously load the DeltaMath Mod GUI
+  fetchGui().then(gui => loadJS(gui))
 }
 
 

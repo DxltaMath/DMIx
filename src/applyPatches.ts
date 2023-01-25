@@ -1,16 +1,10 @@
 import type plugin from "~types/plugin";
 
-export default function applyPatches (code: string, plugins? : plugin[] | undefined | null) : string {
-
-  if (!plugins) return code;
+export default function applyPatches (code: string, plugins : plugin[]) : string {
 
 
   /** DeltaMath code that we modify */
-  let delta: string = `
-    /*PREPEND*/
-    ${code}
-    /*APPEND*/
-  `;
+  let delta: string = code;
 
 
   // For each plugin in the list
@@ -19,8 +13,27 @@ export default function applyPatches (code: string, plugins? : plugin[] | undefi
     // For each patch in the plugin
     plugin.forEach(patch => {
 
-      // Apply the patch
-      delta.replace(patch[0], patch[1]);
+      /* Replace from */
+      const from = patch[0];
+
+      /* Replace to */
+      const to = patch[1];
+
+
+
+      // Insert code before main.js
+      if (from === "prepend") {
+        delta = to[1] + delta;
+
+      // Insert code after main.js
+      } else if (from === "append") {
+        delta = delta + to;
+      
+      // Replace match with code
+      } else {
+        delta.replace(from, to);
+      }
+
     });
 
   });

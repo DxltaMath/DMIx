@@ -2,7 +2,7 @@
 	<a href="/README.md">
 		<img align="center"
 			width="300"
-			alt="DeltaMath Hacking"
+			alt="DeltaMath Modding"
 			src="https://raw.githubusercontent.com/DxltaMath/assets/master/profile/DxltaMath.jpg">
 	</a>
 </h1>
@@ -14,24 +14,22 @@
 		•
 		<a href="https://dsc.gg/dxlta">Discord</a>
 		•
-		<a href="https://github.com/DxltaMath/DMIx/blob/master/.github/meta/QUICKSTART.md">Installation</a>
+		<a href="https://github.com/DxltaMath/DMPx/blob/master/.github/meta/QUICKSTART.md">Installation</a>
 		•
 		<a href="https://www.youtube.com/channel/UCpeKUQjK4mDtn_OUPfg5Uaw">YouTube</a>
 	</strong>
 </p>
 
-# WARNING
-**WE DO NOT CONDONE USAGE OF USING HACKS FOR SCHOOL ASSIGNMENTS. THIS EXTENSION EXISTS PURLEY FOR FUN AND EXPERIMENTATION, _NOT_ CHEATING YOUR MATH CLASS. PLEASE DO NOT USE THIS ON A SCHOOL ACCOUNT- IF YOU PASSED THE DELTAMATH BUT FAILED THE EXAM, THAT'S ON YOU.**
 
-## [How to hack DeltaMath](.github/meta/QUICKSTART.md)
+## [How to mod DeltaMath](.github/meta/QUICKSTART.md)
 Read our [Quickstart Guide](.github/meta/QUICKSTART.md).
 
 
 <h4 align="center" id="Webstores">
 
-<a href=""><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get DMIx for Mozilla Firefox"></a>
-<a href="https://chrome.google.com/webstore/detail/delta-math-interception-e/lhhhbaakoallicbipmckclbigdlkdodh"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get DMIx for Google Chrome"></img></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/kihhkmfnemdfabkddfdelnggjanggdnl"><img src="https://user-images.githubusercontent.com/585534/107280673-a5ece780-6a26-11eb-9cc7-9fa9f9f81180.png" alt="Get DMIx for Microsoft Edge"></a>
+<a href=""><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get DMPx for Mozilla Firefox"></a>
+<a href="https://chrome.google.com/webstore/detail/delta-math-interception-e/lhhhbaakoallicbipmckclbigdlkdodh"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get DMPx for Google Chrome"></img></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/kihhkmfnemdfabkddfdelnggjanggdnl"><img src="https://user-images.githubusercontent.com/585534/107280673-a5ece780-6a26-11eb-9cc7-9fa9f9f81180.png" alt="Get DMPx for Microsoft Edge"></a>
 <a href="/.github/meta/QUICKSTART.md"><img src="https://user-images.githubusercontent.com/69060894/184510500-c0c005f3-023a-4961-bfad-0d0faf055220.png" alt="Manual Install PHEx"></img></a>
 
 

@@ -5,7 +5,7 @@
   "compilerOptions": {
     "lib": ["DOM", "ES2022"],
     "paths": {
-      "~*": ["./*"]
+      "~*": ["./src/*"]
     },
     "baseUrl": "."
   }

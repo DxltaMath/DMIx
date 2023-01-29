@@ -23,7 +23,7 @@ export default function applyPatches (code: string, plugins : plugin[]) : string
 
       // Insert code before main.js
       if (from === "prepend") {
-        delta = to[1] + delta;
+        delta = from + delta;
 
       // Insert code after main.js
       } else if (from === "append") {

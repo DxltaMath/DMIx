@@ -19,6 +19,7 @@ async function injectCode () {
   const plugins = getPlugins();
   const patchedFile = applyPatches(original, plugins);
 
+
   // load DeltaMath file
   await loadJS(patchedFile);
 

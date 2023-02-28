@@ -1,21 +1,53 @@
 {
-  "name": "@deltamath/dmix",
-  "version": "0.1.0",
-  "description": "Delta Math Interception (e)Xtension",
-  "main": "build.sh",
-  "scripts": {
-    "start": "echo \"To build DMIx, use 'npm run sh:build', or use 'npm run js:build'.\"",
-    "build": "echo \"To build DMIx, use 'npm run sh:build', or use 'npm run js:build'.\"",
-    "sh:build": "sh ./build.sh",
-    "js:build": "node build.js"
+  "name": "@deltamath/dmpx",
+  "displayName": "DeltaMath Mod & Plugin Loader Extension | DMPx",
+  "version": "0.2.0",
+  "description": "Mod and plugin loader for DeltaMath.",
+  "author": {
+    "name": "gemsvido",
+    "email": "gemsvido@gmail.com"
   },
-  "repository": { "type": "git", "url": "git+https://github.com/DxltaMath/DMIx.git" },
-  "keywords": ["delta", "dxlta", "hacking", "extension", "chromium", "firefox", "math", "dxltamath", "deltamath", "loader"],
-  "author": "gemsvido",
-  "license": "MPL-2.0",
-  "bugs": { "url": "https://github.com/DxltaMath/DMIx/issues" },
-  "homepage": "https://github.com/DxltaMath/DMIx#readme",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "plasmo dev",
+    "debug": "plasmo dev --verbose",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "plasmo": "^0.62.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
-    "zip-dir": "^2.0.0"
+    "@plasmohq/prettier-plugin-sort-imports": "^3.6.1",
+    "@types/chrome": "^0.0.208",
+    "@types/node": "^18.14.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "chrome-types": "^0.1.175",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "manifest": {
+    "author": "DxltaMath",
+    "permissions": [
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+      "https://*.deltamath.com/*"
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "~rulesets/rules.json"
+        }
+      ]
+    }
   }
 }

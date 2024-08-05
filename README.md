@@ -10,7 +10,7 @@
 
 <p align="center">
 	<strong>
-		<a href="https://dxltamath.github.io/">Website</a>
+		<a href="">Website</a>
 		•
 		<a href="https://dsc.gg/dxlta">Discord</a>
 		•

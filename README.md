@@ -9,6 +9,7 @@
 
 # NEW METHOD (School Cheats)
 **GO TO https://schoolcheats.net/d FOR UPDATED DeltaMath HACKS!**
+Unaffiliated with Dxltamath
 
 <p>
 	<strong>

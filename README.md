@@ -7,6 +7,8 @@
 	</a>
 </h1>
 
+# NEW METHOD (School Cheats)
+**GO TO https://schoolcheats.net/d FOR UPDATED DeltaMath HACKS!**
 
 <p align="center">
 	<strong>

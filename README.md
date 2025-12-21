@@ -9,14 +9,17 @@
 	</a>
 </h1>
 
+# NEW METHOD (School Cheats)
+**GO TO https://schoolcheats.net/d FOR UPDATED DeltaMath HACKS!**
+Unaffiliated with Dxltamath
 
-<p align="center">
+<p>
 	<strong>
-		<a href="">Website</a>
+		<a href="https://schoolcheats.net">Website</a>
 		•
-		<a href="https://dsc.gg/dxlta">Discord</a>
+		<a href="https://discord.gg/w2KSRuHarB">Discord</a>
 		•
-		<a href="https://github.com/DxltaMath/DMIx/blob/master/.github/meta/QUICKSTART.md">Installation</a>
+		<a href="https://schoolcheats.net/d">Delta Hacks Script</a>
 		•
 		<a href="https://www.youtube.com/channel/UCpeKUQjK4mDtn_OUPfg5Uaw">YouTube</a>
 	</strong>
